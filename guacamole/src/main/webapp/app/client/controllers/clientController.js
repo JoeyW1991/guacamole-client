@@ -634,10 +634,12 @@ angular.module('client').controller('clientController', ['$scope', '$routeParams
 
         // Build array of available actions
         var actions;
-        if (NAVIGATE_HOME_ACTION)
-            actions = [ NAVIGATE_HOME_ACTION, RECONNECT_ACTION, LOGOUT_ACTION ];
-        else
-            actions = [ RECONNECT_ACTION, LOGOUT_ACTION ];
+        // if (NAVIGATE_HOME_ACTION)
+        //     actions = [ NAVIGATE_HOME_ACTION, RECONNECT_ACTION, LOGOUT_ACTION ];
+        // else
+        //     actions = [ RECONNECT_ACTION, LOGOUT_ACTION ];
+
+        actions = [ RECONNECT_ACTION ];
 
         // Get any associated status code
         var status = $scope.client.clientState.statusCode;
