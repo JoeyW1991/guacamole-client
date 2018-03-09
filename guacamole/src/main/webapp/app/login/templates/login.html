@@ -1,12 +1,12 @@
-<div class="login-ui" ng-class="{error: loginError, continuation: isContinuation(), initial: !isContinuation()}">
+<div class="login-ui" ng-class="{error: loginError, continuation: isContinuation(), initial: !isContinuation()}" style="background-color: #000">
 
     <!-- Login error message -->
-    <p class="login-error" translate="{{loginError.key}}"
+    <p class="login-error" translate="{{loginError.key}}" 0
        translate-values="{{loginError.variables}}"></p>
 
     <div class="login-dialog-middle">
 
-        <div style="font-size: 24px">链接已关闭</div>
+        <div style="font-size: 24px;color: #EEE">连接已关闭，请重新连接</div>
 
     </div>
 
