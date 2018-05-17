@@ -671,7 +671,8 @@ angular.module('client').controller('clientController', ['$scope', '$routeParams
                 text      : {
                     key : "CLIENT.ERROR_CLIENT_" + errorName
                 },
-                countdown : countdown,
+                // countdown : countdown,
+                countdown : null,
                 actions   : actions
             });
 
@@ -693,7 +694,8 @@ angular.module('client').controller('clientController', ['$scope', '$routeParams
                 text      : {
                     key : "CLIENT.ERROR_TUNNEL_" + errorName
                 },
-                countdown : countdown,
+                // countdown : countdown,
+                countdown : null,
                 actions   : actions
             });
 
